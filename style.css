@@ -13,7 +13,8 @@
     --fw-400: 400;
     --fw-700: 700; 
 
-    --padding: 2rem;
+    --mobile-padding: 1.5rem;
+    --desktop-padding: 2rem;
 }
 
 /* Global Style */
@@ -27,18 +28,15 @@ svg {
     max-width: 100%;
 }
 body {
-    font-family: 'Karla', sans-serif;
-    /* Weights: 400, 700 */
-
     font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: var(--Light-Gray);
 }
 
 /* Main ******************************* */
@@ -62,7 +60,7 @@ main {
 
 /* Top Content ******************************* */
 .top-content {
-    padding: 1.5rem;
+    padding: var(--mobile-padding);
     background-color: var(--width);
 
     display: flex;
@@ -72,7 +70,7 @@ main {
 }
 @media (min-width: 600px) {
     .top-content {
-        padding: var(--padding);
+        padding: var(--desktop-padding);
     }
 }
 /* Header */
@@ -97,7 +95,7 @@ main {
 
 /* Middle Content ******************************* */
 .middle-content {
-    padding: 1.5rem;
+    padding: var(--mobile-padding);
     background-color: var(--Cyan);
 
     display: flex;
@@ -106,7 +104,7 @@ main {
 }
 @media (min-width: 600px) {
     .middle-content {
-        padding: var(--padding);
+        padding: var(--desktop-padding);
     }
 }
 /* Header */
@@ -137,34 +135,32 @@ main {
     color: var(--width);
     opacity: .7;
 }
-
 /* Sign UP Button */
 .middle-content .sign-up-button {
+    padding: .8rem 0;
     border: none;
-    color: var(--width);
-    background-color: var(--Bright-Yellow);
+    border-radius: .5rem;
+    
     font-size: 1.3rem;
     font-weight: 400;
-    padding: .8rem 0;
-    border-radius: .5rem;
+
+    color: var(--width);
+    background-color: var(--Bright-Yellow);
 }
 
 /* Bottom Content ******************************* */
 .bottom-content {
-    padding: 1.5rem;
+    padding: var(--mobile-padding);
     padding-right: 6.5rem;
-
     background-color: var(--Cyan-2);
 
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
-
 }
 @media (min-width: 600px) {
     .bottom-content {
-        padding: var(--padding);
+        padding: var(--desktop-padding);
         padding-right: 4.5rem;
     }
 }
